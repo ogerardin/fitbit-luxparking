@@ -1,0 +1,30 @@
+{
+  "fitbit": {
+    "appType": "app",
+    "appDisplayName": "LuxParking",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#0080ff",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {
+      "en": {
+        "name": "LuxParking"
+      }
+    },
+    "appUUID": "3b5a6f78-8b99-4607-82a0-8e05758fb5d9"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "^1.7.1"
+  }
+}
