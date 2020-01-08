@@ -2,19 +2,17 @@ dist: trusty
 addons:
   apt:
     packages:
-      - libsecret-1-dev
+    - libsecret-1-dev
 language: node_js
 node_js:
-  - 12.14.1
+- 12.14.1
 script:
-  - npx fitbit-build
+- npx fitbit-build
 deploy:
   edge: true
   provider: releases
-  api_key:
-    secure: fl7bdofQzstE3D08Kk2APHiorSzOsUjuMGOIMDrxmD/0xwfts29TDYbtgwfR/hpZ0b5Knkp/0pJE0O3fplPdYnoXbQSVS721EIGKv4qq+u90euRQEt3tXxHAfVC0TMzqR+4gLXi15g4jxvdNezXr9XpBGR8v4ZoCABZ/ZE0VbCrGMLADGjLkWWQiRn7+sstOWd5eFWluDkhr+aF99CbnyocUZ11tgJ5sGUH3Ig8u4WopIftSsGR3t2qH+5O6IKGqzjgzPcaKQmchPS8wGS9XFHbfA8PZRuKr8/WJ7TH0demS0Jcbd/SR9/s+6QjAYIUZyQgIn38XlY9Eu19qe09QKJIHNlSzKQ9sk/YEXMY6HdcOlKELExdWrylT010p0+5E5xbBQ6lh4c6lOw1sM9HUatufmA5jgol1tq3MxmVRavYXPcavZkqH6MGJWBPefRGnQHzItUsb2ZiNZ2OqmgJh/vYPjLy7xJeYur4z7f2nk3Rv/PqX3sBKzvom7KzbTQ5TsytYS87KNOC4WQUyL2yS+dORqX2Ymm6VkcxYI2137ieN/Brqn29iMsNZgD/zTRhji6l1gpyhBgRNIb7Vy5+Pn1XPx6/zblPBPVNT2KRpHQfH0SvUxO7uut2+fPml79wDSEZOY8MKyDOI6psoidxtiNuDbPUPb6sHD92G2Twj224=
   on:
     tags: true
   file: build/app.fba
-
-
+  token:
+    secure: aeNerK7FSqCwJXx7Qvn9WNCtgzf8AzwoT5f3NqHej7VHuVymZywSDLSND9EMwcBYU4RoaOwpmIXpJ/O1hoZ7SRXkXGJ7NHI8LY94du6pNGsK0G0F+IlMQtzD83VmEGuN2942kL3iUgaeF5abvelsXHSow5wJtB2EQHwiOGFsxZ7M6Ck1GF6NVXrYtn1ZJIfLpqBe2zqgMPIOzwJEkK5CPxRnevM35p+u/sb9Sv5Uqvrv0HDkpohp8JUj5Z8fHV56yXFAwTxy3S6Z3TL8is0YRDLgLmtu5826KgQm7oy1CDq6BUvHzn5ujSD2zeI1+wWt3xczmiVJf0OWMLpWVi2kyyRqoQdQyqG3LIcvNv8z95yVEgEhUyoeSxBRs+ZFl2VggKQ5tp9foEgqLjkS96jvNB/B2e8ZpBfCRObNPmtvHPRn2Gi+/9+2ZETnrRDSdyMDaieSJvtoDLeIzYThFNAQRd5hmEb1ZELHJ2iRF5vEtEfwTGlVgqOB6AxNdJpxcn266qx3woFymfu1pHZPGqPF0PHzGZ9fljqNQia0S/4DepSuBHk0g2Xob53JnCGrsisxoczXab/9zXuzwgSlV4gPYq9Y1g9GuF5uNDcnPP+1FynTtqH3iv5hhjUXvX6LhYVsfHXfyKhmxYaM85UKbiTtYP/y/nVkxUry15IZhLA4eKw=
