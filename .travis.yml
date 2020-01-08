@@ -12,6 +12,7 @@ deploy:
   provider: releases
   api_key:
     secure: 7lc4lMWHKIArbv8BoI1AgtUkaGtlJUyMrr2X5+t1bhyDPyLMSWvaMGdkYki+BBOUoTpbHSJCQDch7K/nvemZRmPjB/33zq4mh9ZcSGY8BCVCnAQMmDWQBdNc1FH6BbMrhHTbq3Fmr+dZKUkf/Tqw9ZWT26RayB9xMq+YZNOhMH1rHJ7BO5a/pRiHZdmNMXF50PSTXnhajGi30bdgNKVYbKUh1w6S2mYloUS8U0FMRXbwrtcEV//8wwGj6GymMBuOTogwTk07qM6nhOLqWpowJcKJRhLLze3WpZjlH1nYyuYNxo5UbEBPDAHKOSigQ+NJEGtZapbII92hQ7vNrTiKVNB+vg3tikM1c5ZM7f+VUly+U0RJhrKZ2W3Ck5ojn+KJLs8+LshoOV0Kfy7vDf663fWeGi4aVyp8/xMJXkpadw1PwfWhVju3vUyX0REq3lGDzdtYdBCONQH7axFgfEYRxBhQdoGQazdMa+GxdBZwic9CuP/lYD3DMSHK0HBhm3q2L4FVE++8KFFcPtLsGbN0412ag1X2x1cxi+cih/iD+TWnl9+5yX7g+Htgm/mCBsJUyYfsWs0U9bOFF9h8Qjl/QUOqFM8+sFml5cLrHenKfrpCDXXZyfjT7W/4s8M9mTDO0BGR4AgHE8Al5qN81EzPw8+t4vG8XuLinfa1EDMCfjI=
+  skip_cleanup: true
   file: build/app.fba
   on:
     tags: true
