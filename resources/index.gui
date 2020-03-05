@@ -30,6 +30,7 @@
             <image id="visa" href="visa.png" x="$" y="$-48" height="48" width="72" />
             <image id="amex" href="amex.png" x="$" y="$-48" height="48" width="49" />
             <image id="mastercard" href="mastercard.png" x="$+5" y="$-48" height="48" width="74" />
+            <image id="call2park" href="call2park.png" x="0" y="$+2" height="48" width="55" />
 
             <use id="button-close" href="#square-button-neutral" y="220">
                 <set href="#text" attributeName="text-buffer" to="Close" />
