@@ -41,7 +41,6 @@ TfLuxOccupancy.prototype.allParkings = function () {
                 };
                 //console.log(JSON.stringify(parking))
                 parkings.push(parking);
-                
             });
 
 /*

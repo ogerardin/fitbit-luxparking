@@ -1,5 +1,4 @@
 import document from "document";
-import {TILES_COUNT} from "../common/globals";
 import {DetailsScreen} from "./details-screen";
 
 
@@ -11,10 +10,11 @@ export class ListScreen {
     }
 
     load(parking) {
-
         //console.log("received " + JSON.stringify(parking))
         let i = parking["index"]
-        if (i >= TILES_COUNT) {
+        console.log("received #" + i)
+        if (i >= this.tiles.length) {
+            console.log("  ignoring #" + i)
             return;
         }
         let tile = this.tiles[i];
@@ -28,13 +28,16 @@ export class ListScreen {
 
         tile.style.display = "inline";
         tile.getElementById("name").text = parking.name;
+        let occupancy;
         if (!parking.o) {
-            tile.getElementById("occupancy").text = "closed";
-        } else if (parking.free >= 0) {
-            tile.getElementById("occupancy").text = "" + parking.free + "/" + parking.total;
+            occupancy = "closed";
         } else {
-            tile.getElementById("occupancy").text = "---/" + parking.total;
+            let free = parking.free != null && parking.free >= 0 ? parking.free : "unknown";
+            let total = parking.total != null && parking.total >= 0 ? parking.total : "unknown";
+            occupancy = free + "/" + total;
         }
+        tile.getElementById("occupancy").text = occupancy;
+
         if (parking.trend === 'up') {
             tile.getElementById("trend").image = "arrow_down.png";
         } else if (parking.trend === 'down') {

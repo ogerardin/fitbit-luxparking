@@ -69,6 +69,13 @@
         <use id="parking-17" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
         <use id="parking-18" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
         <use id="parking-19" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-20" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-21" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-22" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-23" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-24" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-25" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
+        <use id="parking-26" href="#tile-list-item" class="item"><use href="#tile-parking"/></use>
     </use>
 
     <use id="details" href="#details-screen"/>

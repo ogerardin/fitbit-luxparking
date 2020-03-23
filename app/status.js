@@ -1,7 +1,3 @@
-import {TILES_COUNT} from "../common/globals.js";
-import document from "document";
-import {DetailsScreen} from "./details-screen";
-
 export class StatusUI {
     constructor(el) {
         this.el = el;
