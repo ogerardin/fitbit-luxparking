@@ -28,6 +28,7 @@ TfLuxOccupancy.prototype.allParkings = function () {
                 let total = properties["total"];
                 let free = properties["free"];
                 let trend = properties["trend"];
+                let payment = properties["meta"]["payment_methods"];
                 let parking = {
                     "index": parkings.length,
                     "name": name,
@@ -36,6 +37,7 @@ TfLuxOccupancy.prototype.allParkings = function () {
                     "free": free,
                     "trend": trend,
                     "o": open,
+                    "payment": payment,
                 };
                 //console.log(JSON.stringify(parking))
                 parkings.push(parking);
